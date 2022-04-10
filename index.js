@@ -1,7 +1,7 @@
 const express = require('express');
 const { redirect } = require('statuses');
 const app = express()
-const port = 3000
+const port = 80
 
 app.post('/', (req, res) => {
     let nodemailer = require('nodemailer');
