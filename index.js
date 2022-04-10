@@ -2,7 +2,10 @@ const express = require('express');
 const { redirect } = require('statuses');
 const app = express()
 const port = 80
-
+const port = 80
+app.get('/', (req, res) => {
+    res.send('api on')
+})
 app.post('/', (req, res) => {
     let nodemailer = require('nodemailer');
     let transporter = nodemailer.createTransport({
